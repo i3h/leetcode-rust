@@ -1,2 +1,2 @@
 #!/bin/bash
-cargo test $1 --lib -- --nocapture
+cargo test test_$1 --lib -- --nocapture

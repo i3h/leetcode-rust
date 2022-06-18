@@ -1,1 +1,2 @@
-mod s0001_two_sum;
+pub mod solution;
+pub mod util;
