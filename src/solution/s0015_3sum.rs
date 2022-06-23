@@ -1,8 +1,36 @@
+use std::collections::HashMap;
+
 pub struct Solution {}
 
 impl Solution {
     pub fn three_sum(nums: Vec<i32>) -> Vec<Vec<i32>> {
-        let result = Vec::new();
+        let mut result = Vec::new();
+        let mut map = HashMap::with_capacity(nums.len());
+        let mut rmap = HashMap::with_capacity(nums.len());
+
+        for (i, num) in nums.iter().enumerate() {
+            //println!("i: {}, num: {}", i, num);
+            map.insert(-num, i);
+        }
+
+        for i in 0..nums.len() {
+            for j in i + 1..nums.len() {
+                if let Some(k) = map.get(&(nums[i] + nums[j])) {
+                    if k != &i && k != &j {
+                        let mut vec = vec![nums[i], nums[j], nums[*k]];
+                        vec.sort();
+                        if !rmap.contains_key(&vec) {
+                            rmap.insert(vec, ());
+                        }
+                    }
+                }
+            }
+        }
+
+        for (k, v) in rmap.iter() {
+            result.push(k.clone());
+        }
+        result.sort();
 
         result
     }
