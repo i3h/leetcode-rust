@@ -23,6 +23,7 @@ mod s0028_implement_strstr;
 mod s0143_reorder_list;
 mod s0203_remove_linked_list_elements;
 mod s0283_move_zeroes;
+mod s0459_repeated_substring_pattern;
 mod s0876_middle_of_the_linked_list;
 mod s1721_swapping_nodes_in_a_linked_list;
 mod s2095_delete_the_middle_node_of_a_linked_list;
