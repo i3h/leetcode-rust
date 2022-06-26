@@ -19,6 +19,7 @@ mod s0022_generate_parentheses;
 mod s0024_swap_nodes_in_pairs;
 mod s0026_remove_duplicates_from_sorted_array;
 mod s0027_remove_element;
+mod s0028_implement_strstr;
 mod s0143_reorder_list;
 mod s0203_remove_linked_list_elements;
 mod s0283_move_zeroes;
