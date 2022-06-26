@@ -1,5 +1,3 @@
-use std::io::Read;
-
 use crate::util::linked_list::{print_list, to_list, ListNode};
 
 pub struct Solution {}

@@ -16,3 +16,4 @@ pub mod s0018_4sum;
 pub mod s0020_valid_parentheses;
 pub mod s0022_generate_parentheses;
 pub mod s0024_swap_nodes_in_pairs;
+pub mod s1721_swapping_nodes_in_a_linked_list;
