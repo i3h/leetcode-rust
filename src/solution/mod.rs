@@ -19,5 +19,6 @@ pub mod s0022_generate_parentheses;
 pub mod s0024_swap_nodes_in_pairs;
 pub mod s0027_remove_element;
 pub mod s0203_remove_linked_list_elements;
+pub mod s0283_move_zeroes;
 pub mod s1721_swapping_nodes_in_a_linked_list;
 pub mod s2095_delete_the_middle_node_of_a_linked_list;
