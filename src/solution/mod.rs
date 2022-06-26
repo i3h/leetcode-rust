@@ -17,6 +17,7 @@ pub mod s0019_remove_nth_node_from_end_of_list;
 pub mod s0020_valid_parentheses;
 pub mod s0022_generate_parentheses;
 pub mod s0024_swap_nodes_in_pairs;
+pub mod s0026_remove_duplicates_from_sorted_array;
 pub mod s0027_remove_element;
 pub mod s0203_remove_linked_list_elements;
 pub mod s0283_move_zeroes;
