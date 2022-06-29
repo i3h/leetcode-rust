@@ -24,6 +24,7 @@ mod s0029_divide_two_integers;
 mod s0143_reorder_list;
 mod s0203_remove_linked_list_elements;
 mod s0283_move_zeroes;
+mod s0398_random_pick_index;
 mod s0459_repeated_substring_pattern;
 mod s0470_implement_rand10_using_rand7;
 mod s0478_generate_random_point_in_a_circle;
