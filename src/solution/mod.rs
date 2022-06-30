@@ -29,6 +29,7 @@ mod s0459_repeated_substring_pattern;
 mod s0470_implement_rand10_using_rand7;
 mod s0478_generate_random_point_in_a_circle;
 mod s0686_repeated_string_match;
+mod s0710_random_pick_with_blacklist;
 mod s0876_middle_of_the_linked_list;
 mod s1342_number_of_steps_to_reduce_a_number_to_zero;
 mod s1721_swapping_nodes_in_a_linked_list;
