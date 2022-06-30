@@ -21,6 +21,7 @@ mod s0026_remove_duplicates_from_sorted_array;
 mod s0027_remove_element;
 mod s0028_implement_strstr;
 mod s0029_divide_two_integers;
+mod s0100_same_tree;
 mod s0143_reorder_list;
 mod s0203_remove_linked_list_elements;
 mod s0283_move_zeroes;
