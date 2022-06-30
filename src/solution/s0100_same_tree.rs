@@ -11,7 +11,17 @@ impl Solution {
         p: Option<Rc<RefCell<TreeNode>>>,
         q: Option<Rc<RefCell<TreeNode>>>,
     ) -> bool {
-        p == q
+        match (p, q) {
+            (None, None) => true,
+            (Some(p), Some(q)) => {
+                let p = p.borrow();
+                let q = q.borrow();
+                p.val == q.val
+                    && Solution::is_same_tree(p.left.clone(), q.left.clone())
+                    && Solution::is_same_tree(p.right.clone(), q.right.clone())
+            }
+            _ => false,
+        }
     }
 }
 
