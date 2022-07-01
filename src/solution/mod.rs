@@ -34,6 +34,7 @@ mod s0478_generate_random_point_in_a_circle;
 mod s0686_repeated_string_match;
 mod s0710_random_pick_with_blacklist;
 mod s0876_middle_of_the_linked_list;
+mod s0979_distribute_coins_in_binary_tree;
 mod s1342_number_of_steps_to_reduce_a_number_to_zero;
 mod s1721_swapping_nodes_in_a_linked_list;
 mod s2095_delete_the_middle_node_of_a_linked_list;
