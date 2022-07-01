@@ -31,6 +31,7 @@ mod s0398_random_pick_index;
 mod s0459_repeated_substring_pattern;
 mod s0470_implement_rand10_using_rand7;
 mod s0478_generate_random_point_in_a_circle;
+mod s0669_trim_a_binary_search_tree;
 mod s0686_repeated_string_match;
 mod s0710_random_pick_with_blacklist;
 mod s0876_middle_of_the_linked_list;
