@@ -8,30 +8,33 @@ pub struct Solution {}
 
 impl Solution {
     pub fn is_balanced(root: Option<Rc<RefCell<TreeNode>>>) -> bool {
-        match root {
-            None => true,
-            Some(root) => {
-                let root = root.borrow();
-                let left_height = Solution::height(root.left.clone());
-                let right_height = Solution::height(root.right.clone());
-                if left_height - right_height > 1 || left_height - right_height < -1 {
-                    return false;
-                }
-                Solution::is_balanced(root.left.clone())
-                    && Solution::is_balanced(root.right.clone())
-            }
-        }
+        let mut height = 0;
+        Solution::is_balanced_helper(root, &mut height)
     }
 
-    fn height(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
+    fn is_balanced_helper(root: Option<Rc<RefCell<TreeNode>>>, height: &mut i32) -> bool {
         match root {
-            None => 0,
+            None => {
+                *height = 0;
+                true
+            }
             Some(root) => {
                 let root = root.borrow();
-                1 + std::cmp::max(
-                    Solution::height(root.left.clone()),
-                    Solution::height(root.right.clone()),
-                )
+                let mut left_height = 0;
+                let mut right_height = 0;
+
+                match Solution::is_balanced_helper(root.left.clone(), &mut left_height)
+                    && Solution::is_balanced_helper(root.right.clone(), &mut right_height)
+                {
+                    false => return false,
+                    true => {
+                        if left_height - right_height > 1 || left_height - right_height < -1 {
+                            return false;
+                        }
+                        *height = std::cmp::max(left_height, right_height) + 1;
+                        return true;
+                    }
+                }
             }
         }
     }
