@@ -21,6 +21,7 @@ mod s0026_remove_duplicates_from_sorted_array;
 mod s0027_remove_element;
 mod s0028_implement_strstr;
 mod s0029_divide_two_integers;
+mod s0046_permutations;
 mod s0100_same_tree;
 mod s0101_symmetric_tree;
 mod s0110_balanced_binary_tree;
