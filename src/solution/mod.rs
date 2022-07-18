@@ -24,6 +24,7 @@ mod s0029_divide_two_integers;
 mod s0039_combination_sum;
 mod s0040_combination_sum_ii;
 mod s0046_permutations;
+mod s0051_n_queens;
 mod s0077_combinations;
 mod s0100_same_tree;
 mod s0101_symmetric_tree;
